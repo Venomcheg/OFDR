@@ -1266,6 +1266,8 @@ body.ie ._ibg img {
 }
 
 .not-main .header {
+  position: relative;
+  z-index: 15;
   background-color: #F6F6F6;
   -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
@@ -1689,6 +1691,151 @@ body.ie ._ibg img {
 }
 
 .news-swiper__swiper {
+  margin-bottom: 40px;
+}
+
+.contacts {
+  padding: 30px 0 60px 0;
+}
+
+.contacts__bg {
+  background-image: url("../img/mapRussia.jpg");
+  background-position: 60% 35%;
+}
+
+.contacts .title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.contacts .page-certification__breadcrumbs {
+  margin-bottom: 50px;
+}
+
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.contacts__info {
+  margin-bottom: 40px;
+}
+
+.contacts__text {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.contacts__qr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__qr img {
+  margin-right: 30px;
+}
+
+.contacts__qr-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__qr-text {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #333;
+}
+
+.contacts__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 60px;
+  background-color: #87B0EE;
+}
+
+.contacts__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contacts__form-body {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__form-body textarea {
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 14px;
+}
+
+.contacts__form-body input {
+  margin-bottom: 14px;
+}
+
+.contacts__form-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts .header__phone {
+  margin-bottom: 20px;
+}
+
+.contacts .header__email {
+  padding: 0;
   margin-bottom: 40px;
 }
 
@@ -2524,6 +2671,24 @@ body.ie ._ibg img {
     margin: 0;
   }
 
+  .contacts__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .contacts__wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 40px;
+  }
+
+  .contacts__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
   .bg-man {
     display: none;
   }
@@ -2829,6 +2994,30 @@ body.ie ._ibg img {
             flex: 1 1 100%;
   }
 
+  .contacts__qr img {
+    width: 100px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .contacts__qr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contacts__form {
+    padding: 20px 20px;
+  }
+
+  .contacts__form-title {
+    font-size: 22px;
+  }
+
   .title {
     font-size: 30px;
   }
@@ -2876,6 +3065,7 @@ body.ie ._ibg img {
 .popup__close{background:url("../img/icons/close.svg") 0 0 no-repeat}
 .certification-info{background-image:url("../img/bg-certification.webp")}
 .certification-form{background-image:url("../img/form-bg.webp")}
+.contacts__bg{background-image:url("../img/mapRussia.webp")}
 .head-page{background-image:url("../img/bg.webp")}
 .group-open::before{background-image:url("../img/icons/check.webp")}
 .examples-page__button{background-image:url("../img/icons/arrow.webp")}
