@@ -807,7 +807,72 @@ if (document.querySelector(".examples-page__slider")) {
 	});
 
 }
+if (document.querySelector(".news-swiper")) {
+	let slider_education = new Swiper('.news-swiper', {
+		/*
+		effect: 'fade',
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		*/
+		observer: true,
+		observeParents: true,
+		slidesPerView: 1,
+		spaceBetween: 30,
+		autoHeight: true,
+		speed: 800,
+		//touchRatio: 0,
+		//simulateTouch: false,
+		//loop: true,
+		//preloadImages: false,
+		//lazy: true,
+		// Dotts
+		pagination: {
+			el: '.pagination-news',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>';
+			},
+		},
+		// Arrows
+		// navigation: {
+		// 	nextEl: '.about__more .more__item_next',
+		// 	prevEl: '.about__more .more__item_prev',
+		// },
 
+		// breakpoints: {
+		// 	320: {
+		// 		slidesPerView: 1,
+		// 		spaceBetween: 0,
+		// 		autoHeight: true,
+		// 	},
+		// 	550: {
+		// 		slidesPerView: 2,
+		// 		spaceBetween: 20,
+		// 	},
+		// 	850: {
+		// 		slidesPerView: 3,
+		// 		spaceBetween: 0,
+		// 	},
+		// 	1140: {
+		// 		slidesPerView: 4,
+		// 		spaceBetween: 0,
+		// 	},
+		// },
+
+		on: {
+			lazyImageReady: function () {
+				ibg();
+			},
+		}
+		// And if we need scrollbar
+		//scrollbar: {
+		//	el: '.swiper-scrollbar',
+		//},
+	});
+
+}
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
